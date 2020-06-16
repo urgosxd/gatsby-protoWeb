@@ -45,8 +45,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`roboto mono`, `muli\:400,400i,700,700i`],
+        fonts: [`Poppins`, `muli\:200,300,400,500,600,700,800,900`],
         display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+        disableAutoprefixing: false,
+        disableMinification: false,
       },
     },
   ],
