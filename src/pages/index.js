@@ -21,8 +21,6 @@ const IndexPage = () => {
 
   const Imagen = data.BG
 
-  const nada = false
-
   console.log(Imagen)
   return (
     <>
@@ -54,4 +52,9 @@ const Main = styled.main.attrs(props => ({
   background-size: cover;
   transform: ${props => (props.State ? "translateX(-400px)" : "")};
   transition: 0.5s;
+
+  @media (max-width: 767px) {
+    display: flex;
+    transform: ${props => (props.State ? "translateX(-250px)" : "")};
+  }
 `

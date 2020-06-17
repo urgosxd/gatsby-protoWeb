@@ -13,4 +13,7 @@ export const NavMenuWrapper = styled.div.attrs(props => ({
   display: grid;
   place-items: center;
   transition: 0.5s;
+  @media (max-width: 767px) {
+    width: 250px;
+  }
 `

@@ -36,4 +36,8 @@ const Anchor = styled.a`
   font-size: 2em;
   font-weight: 600;
   text-transform: uppercase;
+  @media (max-width: 767px) {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
 `
